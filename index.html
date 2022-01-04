@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
 
@@ -755,3 +756,666 @@
     </body>
 
 </html>
+=======
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="assets/img/favicon.ico" type="image/ico">
+        <!--Icons-->
+        <link href="assets/fonts/iconsmind/iconsmind.css" rel="stylesheet">
+        <link href="assets/fonts/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <!--Google fonts-->    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@200;300;400;500;600;700&display=swap"
+            rel="stylesheet">
+            <!--Swiper slider-->
+        <link rel="stylesheet" href="assets/vendor/node_modules/css/swiper-bundle.min.css" />
+        <!-- Main CSS -->
+        <link href="assets/css/theme-teal.css" rel="stylesheet">
+
+        <title>{{ "PageTitle" | shape_new | shape_stringify }}</title>
+    </head>
+    <body  data-bs-spy="scroll" data-bs-target="#navbar-spy" >
+        <!--Preloader Spinner-->
+        <div class="spinner-loader bg-tint-primary">
+            <div class="spinner-border text-primary" role="status">
+            </div>
+            <span class="small d-block ms-2">Loading...</span>
+        </div>
+        <!--Header Start-->
+        <header class="z-index-fixed header-transparent  header-fixed-top sticky-fixed">
+            <nav class="navbar navbar-expand-lg navbar-light navbar-link-white">
+                <div class="container position-relative">
+                    <a class="navbar-brand   text-capitalize"  href="{{ '~/#page-top' | href }}">  {{ Site.SiteName }} 
+                    </a>
+                    <div class="d-flex align-items-center navbar-no-collapse-items order-lg-last">
+                        <button class="navbar-toggler order-last" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbar-spy" aria-controls="navbar-spy" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <i></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse"  id="navbar-spy">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item me-3">
+                                <a href="#thefund" class="nav-link">The Fund</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link" href="#vision">Vision</a>    
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link" href="#partners">Partners</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#getintouch">Get in touch</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+        </header>
+        <!--Main content-->
+
+        <main class="main-content" id="main-content">
+            <section id="hero" class="position-relative vh-100 d-flex align-items-center bg-dark text-white" data-jarallax=".3">
+                <img src="media/tulip-hero.jpg" alt="" class="jarallax-img opacity-50">
+                 <!--Particles-->
+                 <div class="position-absolute w-200 h-50 start-0 top-0" id="particles-js"></div>
+                 <!--Connected line-->
+                 <div class="position-absolute star-0 bottom-0 w-100 text-center justify-content-center text-muted">
+                    <div class="connect-line d-inline-block position-relative"> </div>
+                </div>
+
+                <div class="container position-relative py-5">
+                    <div class="row">
+                        <div class="col-xl-9 mx-auto text-center">
+                            <div data-aos="fade-up" data-aos-duration="1000">
+                                <img  class="display-3 text-serif fw-normal mb-3 img-fluid" data-aos="fade-up" src="media/tulip-transparent.png"></img>
+                            </div>
+                            <a href="#thefund" class="btn btn-outline-white  rounded-pill btn-rise">
+                            <div class="btn-rise-bg bg-white"></div>
+                            <div class="btn-rise-text">continue</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--/.row-->
+                </div>
+                <!--/.content-->
+            </section>
+            <!--/section-->
+    
+
+            <section id="thefund" class="position-relative overflow-hidden">
+                <div class="container py-9 py-lg-11 z-index-1">
+                  <div class="row align-items-center justify-content-between">
+                    <div class="order-last col-lg-6">
+            
+                       <!--Subheading-->
+                       <div class="mb-2" data-aos="fade-up">
+                        <span class="h6 text-muted">Who we are</span>
+                      </div>
+                       <!--Divider vector-->
+                       <div data-aos="fade-up">
+                        <svg class="width-60 h-auto text-primary mb-5" preserveAspectRatio="none" width="100%" height="6" viewBox="0 0 63 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.119995 2.79013C0.119995 2.79013 26.91 -0.589865 62.82 1.93013" stroke="currentColor" stroke-width="2"></path>
+                        </svg>
+                      </div>
+            
+                      <!--Section Heading-->
+                      <h2 class="mb-7 display-4 position-relative z-index-1" data-aos="fade-right">Hedge Fund
+                      </h2>
+                     
+                           
+                      <p class="mb-0 dropcap ls-4   fw-semibold" data-aos="fade-right">
+                        Tulip Capital was founded in 2012, bringing together top professional investment managers from leading institutional companies.
+                        Tulip’s vision is to create value for investors by identifying opportunities while actively managing risks.
+                        Our goal is to outperform Tel-Aviv equities indices.
+                        We are constantly reaching strong absolute performance with modest market exposure and significant outperformance on a risk-adjusted basis.
+                     
+                      </p><!--col-lg-->
+                        </div>
+                    
+                    <div class="col-lg-4 col-md-10 me-lg-auto  order-lg-1 order-last mb-7 mb-lg-0">
+                      <div class="position-relative" data-aos="fade-left" data-aos-delay="150">
+                         <!--Transparent image background-->
+                         
+                         <div class="bg-success mt-n5 position-absolute start-0 bottom-0 w-50 h-75"></div>
+                         <div class="bg-tint-primary position-absolute end-0 bottom-0 w-75 w-lg-70 h-100"></div>
+                        <img src="media/tulip-black-transparent.png" alt="" class="img-fluid position-relative rounded-xl w-100">
+                      </div>
+                    </div>
+               
+                  </div><!--row-->
+                </div><!--container-->
+              </section>
+   
+              <section id="vision" class="position-relative overflow-hidden bg-gradient-light" >
+                <div class="container-fluid py-9 py-lg-11 ">
+                <div class="row align-items-center">
+                    <div class="order-lg-1 order-last  col-lg-6 col-xl-4 offset-xl-1">
+                            <!--Subheading-->
+                <div class="mb-2" data-aos="fade-up">
+                    <span class="h6 text-muted">Vision</span>
+                </div>
+                <!--Divider vector-->
+                <div data-aos="fade-up">
+                <svg class="width-60 h-auto text-primary mb-5  " preserveAspectRatio="none" width="100%" height="6" viewBox="0 0 63 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.119995 2.79013C0.119995 2.79013 26.91 -0.589865 62.82 1.93013" stroke="currentColor" stroke-width="2"></path>
+                </svg>
+                </div>
+                <!--Section Heading-->
+                <h4 class="mb-4 display-4" data-aos="fade-up" data-aos-delay="100">Our Vision </h4>
+                <div class="d-flex mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="me-4">
+                    <!--Icon-->
+                    <i class="bi bi-check lh-1 size-30 center-both rounded-circle bg-light text-primary position-relative fs-4"></i> 
+                </div>
+                <p class="mb-0 ls-4 fw-semibold">
+                    Tulip’s vision is to create value for investors by identifying opportunities while actively managing risks.
+                </p>
+                </div>
+                <div class="d-flex mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="200">
+                    <div class="me-4">
+                        <!--Icon-->
+                        <i class="bi bi-check lh-1 size-30 center-both rounded-circle bg-light text-primary position-relative fs-4"></i> 
+                    </div>
+                    <p class="mb-0 ls-4 fw-semibold">
+                        Our aim is to produce high yields at low risk based on Market Research and sophisticated Investment Methodologies.
+                    </p>
+                    </div>
+                    
+                <div class="d-flex mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="200">
+                    <div class="me-4">
+                        <!--Icon-->
+                        <i class="bi bi-check lh-1 size-30 center-both rounded-circle bg-light text-primary position-relative fs-4"></i> 
+                    </div>
+                    <p class="mb-0 ls-4 fw-semibold">
+                        <br>Our goal is to outperform Tel-Aviv equities indices. 
+                    </p>
+                    </div>
+                    
+                </div><!--column-->
+        
+                <div class="col-lg-6 mb-5 mb-lg-0 order-lg-last order-1 offset-xl-1">
+                                <div class="position-relative" data-aos="fade-up"
+                                    data-aos-delay="200">
+                                    <!--feature image-->
+                                    <img class="img-fluid position-relative"  alt=""
+                                        src="media/vision-ttech.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+  
+        <section id="strategy" class="position-relative overflow-hidden bg-gradient-light" >
+            <div class="container-fluid py-9 py-lg-11 position-relative z-index-1">
+            <div class="row align-items-center">
+                <div class="order-last col-lg-6 col-xl-4 offset-xl-1">
+                        <!--Subheading-->
+            <div class="mb-2" data-aos="fade-up">
+                <span class="h6 text-muted">Strategy</span>
+            </div>
+            <!--Divider vector-->
+            <div data-aos="fade-up">
+            <svg class="width-60 h-auto text-primary mb-5  " preserveAspectRatio="none" width="100%" height="6" viewBox="0 0 63 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.119995 2.79013C0.119995 2.79013 26.91 -0.589865 62.82 1.93013" stroke="currentColor" stroke-width="2"></path>
+            </svg>
+            </div>
+            <!--Section Heading-->
+            <h4 class="mb-4 display-4" data-aos="fade-up" data-aos-delay="100">Our Strategy </h4>
+            <div class="d-flex mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="me-4">
+                <!--Icon-->
+                <i class="bi bi-check lh-1 size-30 center-both rounded-circle bg-light text-primary position-relative fs-4"></i> 
+            </div>
+            <p class="mb-0 ls-4 fw-semibold">
+                Long/Short equity focused on deep value and active approach.
+            </p>
+            </div>
+            <div class="d-flex mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="me-4">
+                    <!--Icon-->
+                    <i class="bi bi-check lh-1 size-30 center-both rounded-circle bg-light text-primary position-relative fs-4"></i> 
+                </div>
+                <p class="mb-0 ls-4 fw-semibold">
+                    We look for positive catalysts which will generate strong value.
+                </p>
+                </div>
+                
+            <div class="d-flex mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="me-4">
+                    <!--Icon-->
+                    <i class="bi bi-check lh-1 size-30 center-both rounded-circle bg-light text-primary position-relative fs-4"></i> 
+                </div>
+                <p class="mb-0 ls-4 fw-semibold">
+                    Individual stock selection based on bottom-up  fundamental research.
+                </p>
+                </div>
+                <div class="d-flex mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="200">
+                    <div class="me-4">
+                        <!--Icon-->
+                        <i class="bi bi-check lh-1 size-30 center-both rounded-circle bg-light text-primary position-relative fs-4"></i> 
+                    </div>
+                    <p class="mb-0 ls-4 fw-semibold">
+                        Absolute return strategy focused on generating long and short alpha.
+                    </p>
+                    </div>
+            </div><!--column-->
+    
+            <div class="col-lg-6 mb-5 mb-lg-0 order-1">
+                            <div class="position-relative" data-aos="fade-up"
+                                data-aos-delay="200">
+                                <!--feature image-->
+                                <img class="img-fluid position-relative" alt=""
+                                    src="media/strategy.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+ <!--/.section  bg-dark-->
+ <section class="position-relative overflow-hidden bg-gradient-light " id="partners">
+    <div class="container position-relative pt-9 pt-lg-12">
+        <div class="row mb-7 mb-lg-9  justify-content-start">
+            <div class="col-lg-8 col-lg-6 text-dark text-left">
+                
+                <!--Subheading-->
+                <div class="mb-2" data-aos="fade-up">
+                    <span class="h6">Partners</span>
+                </div>
+
+                <!--Divider vector-->
+                
+            <div data-aos="fade-up">
+                <svg class="width-60 h-auto text-primary mb-5  " preserveAspectRatio="none" width="100%" height="6" viewBox="0 0 63 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.119995 2.79013C0.119995 2.79013 26.91 -0.589865 62.82 1.93013" stroke="currentColor" stroke-width="2"></path>
+                </svg>
+                </div>
+
+                <!--Section Heading-->
+               
+                <h4 class="mb-4 display-4" data-aos="fade-up" data-aos-delay="100">Our Partners </h4>
+         
+                <p class="mb-0 ls-4 fw-semibold">
+                    We are expireinced and most efficient team. 
+
+                    Our Experience and Reputation earned due to many years of managing investments at the leading Israeli Investment Companies.
+                </p>
+                <p class="mb-0 ls-4 fw-semibold">
+                    The <span itemprop="name"> Tulip Capital </span>Fund Managers has deep expertise across multiple disciplines including equities ,traditional bond and loan, distressed and equity derivatives.
+                 </p>
+                 <p class="mb-0 ls-4 fw-semibold">
+          We are leveraging our institutional knowledge across industries, geographies, capital structures, asset classes, portfolio construction and risk management. 
+         </p>
+               
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="position-relative overflow-hidden   " >
+
+    <div class="container py-9 py-lg-11 ">
+        <!--heading-->
+<h5 class="mb-4 display-4 " data-aos="fade-up" data-aos-delay="100">The Team </h5>
+<!--/.End heading--> 
+
+<hr>
+    <div class="row justify-content-md-around mb-7 pb-9 mb-lg-11 align-items-center">
+       <div class="col-md-6 mb-5 mb-md-0 order-md-last " data-aos="fade-left" data-aos-delay="100">
+            <img src="media/yoga-man.jpg" class="img-fluid rounded-blob shadow-lg" alt="">
+        </div>
+        <div class="col-md-4 order-md-1" data-aos="fade-right" data-aos-delay="100">
+            <div class="d-flex align-items-center mb-4">
+                <h1 class="mb-0 display-6">
+                    Digital
+                </h1>
+            </div>
+           
+            <p class="mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+
+            </p>
+            <ul class="list-unstyled text-dark">
+                <li class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2 fs-6 me-2"></i>
+                    <span>Web design</span>
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2 fs-6 me-2"></i>
+                    <span>UI/UX design &amp; prototyping</span>
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2 fs-6 me-2"></i>
+                    <span>App design</span>
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2 fs-6 me-2"></i>
+                    <span>Front- and backend coding</span>
+                </li>
+                <li class="d-flex align-items-center">
+                    <i class="bi bi-check2 fs-6 me-2"></i>
+                    <span>Seo and marketing</span>
+                </li>
+            </ul>
+        </div>
+        <!--/.End Col-->
+    </div>
+    <hr>
+    <div class="row justify-content-md-around mb-7 pb-9 mb-lg-11 align-items-center  ">
+        <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-left" data-aos-delay="100">
+            <img src="media/bussiness-man.jpg" class="img-fluid rounded-blob shadow-lg" alt="">
+        </div>
+        <div class="col-md-4" data-aos="fade-right" data-aos-delay="150">
+            <div class="d-flex align-items-center mb-4">
+                <h1 class="mb-0 display-6">
+                    Content
+                </h1>
+            </div>
+            <!--/.End heading-->
+            <p class="mb-4">
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            </p>
+            <ul class="list-unstyled text-dark mb-0">
+                <li class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2 fs-6 me-2"></i>
+                    <span>Content creation</span>
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2 fs-6 me-2"></i>
+                    <span>Copywriting</span>
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2 fs-6 me-2"></i>
+                    <span>Content analysis</span>
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2 fs-6 me-2"></i>
+                    <span>Content strategy</span>
+                </li>
+                <li class="d-flex align-items-center">
+                    <i class="bi bi-check2 fs-6 me-2"></i>
+                    <span>Content management systems (CMS)</span>
+                </li>
+            </ul>
+        </div>
+        <!--/.End Col-->
+    </div>
+    <hr>
+    <div class="row justify-content-md-around mb-7 p-9 mb-lg-11 align-items-center">
+        <div class="col-md-6 mb-5 mb-md-0 order-md-last " data-aos="fade-left" data-aos-delay="100">
+             <img src="media/ryan.jpg" class="img-fluid rounded-blob shadow-lg" alt="">
+         </div>
+         <div class="col-md-4 order-md-1 hover-shadow-lg rounded-2 p-4" data-aos="fade-right" data-aos-delay="100">
+             <div class="d-flex justify-content-center mb-4">
+                 <h4 class="mb-0 display-6 align-middle">
+                    Michael Malka
+                 </h4>
+                 
+             </div>
+             <h6 class="mb-3 align-middle t">Managing Partner, C.E.O
+            </h6>
+             <ul class="list-unstyled text-dark">
+                 <li class="d-flex align-items-center mb-2">
+                     <i class="bi  bi-check2 fs-6 me-2"></i>
+                     <span class="fw-semibold ">2009-<script>
+                        document.write(new Date().getFullYear())
+                      </script></span>
+                 </li>
+                 <li class="d-flex  mb-2">
+                     
+                     <span>Harel Finance - C.E.O &amp; </span>
+                 </li>
+                 <li class="d-flex align-items-center mb-2">
+                   
+                     <span>Director of 3 companies in Harel group
+                 </li>
+                 <li class="d-flex align-items-center mb-2">
+                     <i class="bi bi-check2 fs-6 me-2"></i>
+                     <span class="fw-semibold" >2003-2009</span>
+                 </li>
+                 <li class="d-flex align-items-center">
+                
+                     <span>Sprint Investments House - Founder, C.E.O</span>
+                 </li>
+                 <li class="d-flex align-items-center m-2">
+                   
+                    <span class="fw-semibold" >1998-2003</span>
+                </li>
+                <li class="d-flex align-items-center">
+                
+                    <span>Harel Capital - Senior Analyst and Economic division manager</span>
+                </li>
+                <li class="d-flex align-items-center m-2">
+                   
+                    <span class="fw-semibold" >2001:</span>
+                </li>
+                <li class="d-flex align-items-center">
+                
+                    <span>Credited as the Israeli ‘Analyst of the year’
+                        Volunteer to the financial committee of the Maccabi World Organization
+                        and the financial committee of Tel Aviv Philharmonic Orchestra</span>
+                </li>
+
+             </ul>
+         </div>
+         <!--/.End Col-->
+     </div><!--end row-->
+     <hr>
+     <div class="row pt-9">
+        <div class="col-lg-10 col-xl-9 mx-auto" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+            <div class="position-relative">
+                <h1 class="display-3 font-serif mb-5 text-center">
+                    " Great things in
+                    business are never done
+                    by one person. "
+                </h1>
+                <h5 class="text-center mb-0">
+                    - Steve Jobs
+                </h5>
+            </div>
+        </div>
+    </div>
+    <hr>
+    </div><!--end container-->
+</section>
+               
+        </main>
+        
+<!--Footer Start-->
+<setion id="getintouch">
+<footer id="footer" class="bg-white">
+    <div class="container pt-9 pt-lg-11 pb-5">
+        <div class="row">
+            <div class="col-sm-7 mb-4 mb-sm-0">
+                <!--Subheading-->
+                <div class="mb-2" data-aos="fade-up">
+                    <span class="h6">Get in Touch</span>
+                </div>
+
+                <!--Divider vector-->
+                
+            <div data-aos="fade-up">
+                <svg class="width-60 h-auto text-primary mb-5  " preserveAspectRatio="none" width="100%" height="6" viewBox="0 0 63 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.119995 2.79013C0.119995 2.79013 26.91 -0.589865 62.82 1.93013" stroke="currentColor" stroke-width="2"></path>
+                </svg>
+                </div>
+                <!--Address-->
+                <p class="mb-0 fw-semibold" style="color: #348f87">Ehad Haam str, 9  <br> 
+                    Tel Aviv<br>
+                    Israel</p>
+            </div>
+            <div class="col-sm-5 text-sm-end">
+                <!--Phone-->
+                <a href="#!" class="fs-6 link-hover-underline">+011(1234) 56789</a><br><br>
+                <!--Email-->
+                <a href="mailto:mail@tulip-fund" class="fs-6 link-hover-underline">mail@tulip-fund</a>
+            </div>
+        </div>
+        <hr class="my-4 my-md-5">
+        <div class="row text-secondary">
+            <div class="col-sm-7">
+                <!--Social List-->
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a class="link-hover-underline" href="#">Facebook</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="link-hover-underline" href="#">Twitter</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="link-hover-underline" href="#">Linkedin</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="col-sm-5 text-sm-end">
+                <!--Copyright Text-->
+                <span class="d-block lh-sm small text-muted " style="color: #348f87">© Copyright
+                    <script>
+                      document.write(new Date().getFullYear())
+                    </script>. TULIP CAPITAL
+                  </span>
+            </div>
+        </div>
+    </div>
+</footer>
+</setion>
+
+        <!-- begin Back to Top button -->
+        <a href="#" class="toTop">
+            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 9' class="align-middle rotate-180" width="13"
+                height="9">
+                <path fill='currentColor'
+                    d="M12.25 2.30062L10.8988 0.949371L6.5 5.33854L2.10125 0.949371L0.75 2.30062L6.5 8.05062L12.25 2.30062Z">
+                </path>
+            </svg>
+        </a>
+        <!-- scripts -->
+        <script src="assets/js/theme.bundle.js"></script>
+
+        
+       
+
+        <!--Particles script-->
+        <script src="assets/vendor/node_modules/js/particles.js"></script>
+        <script>
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": {
+                        "value": 24,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#ffffff"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        },
+                    },
+                    "opacity": {
+                        "value": 0.6,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": true
+                        }
+                    },
+                    "size": {
+                        "value": 7,
+                        "random": true,
+                        "anim": {
+                            "enable": true,
+                            "speed": 60,
+                            "size_min": 0.25,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": false,
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 4,
+                        "direction": "none",
+                        "random": true,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": true,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": false,
+                            "mode": "grab"
+                        },
+                        "onclick": {
+                            "enable": false,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 140,
+                            "line_linked": {
+                                "opacity": 0
+                            }
+                        },
+                        "bubble": {
+                            "distance": 200,
+                            "size": 60,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 8
+                        },
+                        "repulse": {
+                            "distance": 300,
+                            "duration": 0.9
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+
+        </script>
+
+        
+
+    </body>
+
+</html>
+>>>>>>> 2bf32a9c8f90438aae79b4a28663dafb24077412
