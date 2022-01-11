@@ -2,9 +2,21 @@
 <html lang="en">
 
     <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-57328494-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-57328494-1');
+</script>
+
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Tulip CAPITAL is Leading Investment Fund, managed by best experienced professionals.">
+        <meta name="keywords" content="Tulip, Capital, investment, fund">
         <link rel="icon" href="assets/img/favicon.ico" type="image/ico">
         <!--Icons-->
         <link href="assets/fonts/iconsmind/iconsmind.css" rel="stylesheet">
@@ -19,8 +31,10 @@
         <link rel="stylesheet" href="assets/vendor/node_modules/css/swiper-bundle.min.css" />
         <!-- Main CSS -->
         <link href="assets/css/theme-teal.css" rel="stylesheet">
-
-        <title>{{ "PageTitle" | shape_new | shape_stringify }}</title>
+        <div itemscope itemtype="http://schema.org/InvestmentFund">
+        <title  > <span  itemprop="name">Tulip CAPITAL </span>| <span itemprop="type"> Investment Hedge Fund</span> |</title>
+    </div>
+        <!--{{ "PageTitle" | shape_new | shape_stringify }}-->
     </head>
     <body  data-bs-spy="scroll" data-bs-target="#navbar-spy" >
         <!--Preloader Spinner-->
@@ -33,8 +47,11 @@
         <header class="z-index-fixed header-transparent  header-fixed-top sticky-fixed">
             <nav class="navbar navbar-expand-lg navbar-light navbar-link-white">
                 <div class="container position-relative">
-                    <a class="navbar-brand   text-capitalize"  href="{{ '~/#page-top' | href }}">  {{ Site.SiteName }} 
+                    <!--{{ Site.SiteName }} -->
+                    <div itemscope itemtype="http://schema.org/InvestmentFund">
+                    <a  itemprop="brand" class="navbar-brand   text-capitalize"  href="{{ '~/#page-top' | href }}"> Tulip CAPITAL
                     </a>
+                    </div>
                     <div class="d-flex align-items-center navbar-no-collapse-items order-lg-last">
                         <button class="navbar-toggler order-last" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbar-spy" aria-controls="navbar-spy" aria-expanded="false"
@@ -68,7 +85,7 @@
 
         <main class="main-content" id="main-content">
             <section id="hero" class="position-relative vh-100 d-flex align-items-center bg-dark text-white" data-jarallax=".3">
-                <img src="media/tulip-hero.jpg" alt="" class="jarallax-img opacity-50">
+                <img itemprop="logo" src="media/tulip-hero.jpg" alt="Tulip Caital" class="jarallax-img opacity-50">
                  <!--Particles-->
                  <div class="position-absolute w-200 h-50 start-0 top-0" id="particles-js"></div>
                  <!--Connected line-->
@@ -98,6 +115,7 @@
             <section id="thefund" class="position-relative overflow-hidden">
                 <div class="container py-9 py-lg-11 z-index-1">
                   <div class="row align-items-center justify-content-between">
+                    
                     <div class="order-last col-lg-6">
             
                        <!--Subheading-->
@@ -112,29 +130,28 @@
                       </div>
             
                       <!--Section Heading-->
+                      <span itemscope itemtype="https://schema.org/InvestmentFund">
                       <h2 class="mb-7 display-4 position-relative z-index-1" data-aos="fade-right">Hedge Fund
-                      </h2>
-                     
-                           
-                      <p class="mb-0 dropcap ls-4   fw-semibold" data-aos="fade-right">
-                        Tulip Capital was founded in 2012, bringing together top professional investment managers from leading institutional companies.
+                      </h2>    
+                      <p class="mb-0 dropcap ls-4   fw-semibold" data-aos="fade-right" >
+                       <span itemprop="name"> Tulip Capital </span><span itemprop="description"> was founded in 2012, bringing together top professional investment managers from leading institutional companies.
                         Tulip’s vision is to create value for investors by identifying opportunities while actively managing risks.
                         Our goal is to outperform Tel-Aviv equities indices.
                         We are constantly reaching strong absolute performance with modest market exposure and significant outperformance on a risk-adjusted basis.
-                     
+                        </span>
                       </p><!--col-lg-->
                         </div>
-                    
+                   
                     <div class="col-lg-4 col-md-10 me-lg-auto  order-lg-1 order-last mb-7 mb-lg-0">
                       <div class="position-relative" data-aos="fade-left" data-aos-delay="150">
                          <!--Transparent image background-->
                          
                          <div class="bg-success mt-n5 position-absolute start-0 bottom-0 w-50 h-75"></div>
                          <div class="bg-tint-primary position-absolute end-0 bottom-0 w-75 w-lg-70 h-100"></div>
-                        <img src="media/tulip-black-transparent.png" alt="" class="img-fluid position-relative rounded-xl w-100">
+                        <img itemprop="logo" src="media/tulip-black-transparent.png" alt="Tulip CAPITAL" class="img-fluid position-relative rounded-xl w-100">
                       </div>
                     </div>
-               
+                </span><!--InvestmentFund item type-->
                   </div><!--row-->
                 </div><!--container-->
               </section>
@@ -190,7 +207,7 @@
                                 <div class="position-relative" data-aos="fade-up"
                                     data-aos-delay="200">
                                     <!--feature image-->
-                                    <img class="img-fluid position-relative"  alt=""
+                                    <img class="img-fluid position-relative"  alt="vision img"
                                         src="media/vision-ttech.jpg">
                                 </div>
                             </div>
@@ -257,7 +274,7 @@
                             <div class="position-relative" data-aos="fade-up"
                                 data-aos-delay="200">
                                 <!--feature image-->
-                                <img class="img-fluid position-relative" alt=""
+                                <img class="img-fluid position-relative" alt="strategy img"
                                     src="media/strategy.jpg">
                             </div>
                         </div>
@@ -267,6 +284,7 @@
  <!--/.section  bg-dark-->
  <section class="position-relative overflow-hidden bg-gradient-light " id="partners">
     <div class="container position-relative pt-9 pt-lg-12">
+        <div itemscope itemtype="https://schema.org/Founders">
         <div class="row mb-7 mb-lg-9  justify-content-start">
             <div class="col-lg-8 col-lg-6 text-dark text-left">
                 
@@ -293,7 +311,7 @@
                     Our Experience and Reputation earned due to many years of managing investments at the leading Israeli Investment Companies.
                 </p>
                 <p class="mb-0 ls-4 fw-semibold">
-                    The <span itemprop="name"> Tulip Capital </span>Fund Managers has deep expertise across multiple disciplines including equities ,traditional bond and loan, distressed and equity derivatives.
+                    The <span itemprop="name"> Tulip Capital </span> Fund Managers has deep expertise across multiple disciplines including equities ,traditional bond and loan, distressed and equity derivatives.
                  </p>
                  <p class="mb-0 ls-4 fw-semibold">
           We are leveraging our institutional knowledge across industries, geographies, capital structures, asset classes, portfolio construction and risk management. 
@@ -301,6 +319,7 @@
                
             </div>
         </div>
+        </div><!---->
     </div>
     </section>
     <section class="position-relative overflow-hidden   " >
@@ -310,24 +329,27 @@
 <h5 class="mb-4 display-4 " data-aos="fade-up" data-aos-delay="100">The Team </h5>
 <hr>
 <!--/.End heading--> 
+<span itemprop="Founder" itemscope itemtype="https://schema.org/Person">
 <div class="row justify-content-md-around mb-7 pb-9 mb-lg-11 align-items-center ">
+   
     <div class="col-md-6 mb-5 mb-md-0 order-md-1   " data-aos="fade-left" data-aos-delay="100">
-         <img src="media/ryan.jpg" class="img-fluid rounded-blob shadow-lg" alt="">
+         <img itemprop="photo" src="media/michamalca.jpg" class="img-fluid rounded-blob shadow-lg" alt="Michael Malka photo">
      </div>
+    
      <div class="col-md-6  order-md-last mb-8 mt-8" data-aos="fade-right" data-aos-delay="100">
          <div class="d-flex justify-content-center mb-4">
-             <h4 class="mb-0 display-6 align-middle">
+             <h4  itemprop="name" class="mb-0 display-6 align-middle">
                 Michael Malka
              </h4>
              
          </div>
          <div class="d-flex  justify-content-center mb-4">
-         <h6 class="mb-3  ">Managing Partner, C.E.O
+         <h6 itemprop="JobTitle" class="mb-3  ">Managing Partner, C.E.O
         </h6>
     </div>
         <div class="d-flex  justify-content-center mb-4">
             <span>
-                email: <a href="mailto:micha@tulip-fund.com
+                email: <a  itemprop="contact"  href="mailto:micha@tulip-fund.com
                 ?Subject=Regarding%20your%20fund"> micha@tulip-fund.com</a>
             </span>
         </div>
@@ -376,28 +398,96 @@
          </ul>
      </div>
      <!--/.End Col-->
+    
  </div><!--end row-->
+</span>
+ <hr>
+ <span itemprop="Founder" itemscope itemtype="https://schema.org/Person">
+ <div class="row justify-content-md-around mb-lg-6 align-items-center  ">
+     <div class="col-md-6 mb-5 mb-md-0 order-md-last " data-aos="fade-left" data-aos-delay="100">
+         <img  itemprop="photo" src="media/bussiness-man.jpg" class="img-fluid rounded-blob shadow-lg" alt="Baruch Zibin photo">
+     </div>
+     <div class="col-md-6  mb-8 mt-8" data-aos="fade-right" data-aos-delay="150">
+         <div class="d-flex justify-content-center mb-4">
+             <h4 itemprop="name" class="mb-0 display-6 align-middle">
+                 Baruch Zibin
+             </h4>
+             
+         </div>
+         <div class="d-flex  justify-content-center mb-4">
+         <h6 class="mb-3  ">  Managing Partner, C.I.O
+        </h6>
+     </div>
+   
+        <div class="d-flex  justify-content-center mb-4">
+            <span>
+                
+            e-mail:   <a href="mailto:baruch@tulip-fund.com?Subject=Regarding%20your%20fund" 
+          itemprop="email" target="_top" >
+                              baruch@tulip-fund.com</a>
+                             </span>
+        </div>
+
+         <!--/.End heading-->
+         <ul class="list-unstyled text-dark mb-0">
+             <li class="d-flex align-items-center mt-3">
+                 <i class="bi  bi-check2 fs-6 me-2"></i>
+                 <span class="fw-semibold "> 2010-2012</span>
+             </li>
+             <li >
+                 <span>Sphera Hedge Fund - Senior Portfolio Manager </span>
+             </li>
+             <li class="d-flex align-items-center mt-3">
+                 <i class="bi  bi-check2 fs-6 me-2"></i>
+                 <span class="fw-semibold "> 2007-2010</span>
+             </li>
+             <li >
+                 <span>Harel Insurance
+                     Senior Investment Manager of all the Tradable Assets (15 Bill’ $)
+                     Senior Investment Manager of the stock Division (3 Bill’ $)</span>
+             </li>
+             <li class="d-flex align-items-center mt-3">
+                 <i class="bi  bi-check2 fs-6 me-2"></i>
+                 <span class="fw-semibold ">2003-2007</span>
+             </li>
+             <li >
+                 <span>Sprint Investment House - Founder, Senior Analyst</span>
+             </li>
+             <li class="d-flex align-items-center mt-3">
+                 <i class="bi  bi-check2 fs-6 me-2"></i>
+                 <span class="fw-semibold ">1998-2003</span>
+             </li>
+             <li >
+                 <span>Harel Capital - Senior Analyst, Mutual Fund Investment Manager</span>
+             </li>
+         </ul>
+     </div>
+     <!--/.End Col-->
+ </div>
+ </span>
  <hr>
 <!-- mb-7 pb-9 hover-shadow-lg rounded-2-->
+<span itemprop="Founder" itemscope itemtype="https://schema.org/Person">
     <div class="row justify-content-md-around mb-lg-6    align-items-center ">
-       <div class="col-md-6 mb-5 mb-md-0 order-md-last " data-aos="fade-left" data-aos-delay="100">
-            <img src="media/yoga-man.jpg" class="img-fluid rounded-blob shadow-lg" alt="">
+       <div class="col-md-6 mb-5 mb-md-0  " data-aos="fade-left" data-aos-delay="100">
+            <img itemprop="photo" src="media/yoga-man.jpg" class="img-fluid rounded-blob shadow-lg" alt="Moshe Gabay photo">
         </div>
-        <div class="col-md-6 order-md-1 mb-8 mt-8" data-aos="fade-right" data-aos-delay="100">
+        <div class="col-md-6 order-md-1 mb-8 mt-8 order-md-last"  data-aos="fade-right" data-aos-delay="100">
             <div class="d-flex justify-content-center m-4">
-                <h4 class="mb-0 display-6 align-middle">
+                <h4  itemprop="name" class="mb-0 display-6 align-middle">
                     Moshe Gabay
                 </h4>
                 
             </div>
+            
             <div class="d-flex  justify-content-center mb-4">
-            <h6 class="mb-3  "> Managing Partner
-           </h6>
-        </div>
-      
+                <h6 itemprop="JobTitle" class="mb-3  "> Managing Partner
+                </h6>
+            </div>
+           
            <div class="d-flex  justify-content-center mb-4">
                <span>
-                   email: <a  href="mailto:moshe@tulip-fund.com?Subject=Regarding%20your%20fund" > moshe@tulip-fund.com</a>
+                   email: <a itemprop="contact"  href="mailto:moshe@tulip-fund.com?Subject=Regarding%20your%20fund" > moshe@tulip-fund.com</a>
                </span>
            </div>
 
@@ -434,70 +524,8 @@
         </div>
         <!--/.End Col-->
     </div>
+</span>
     <hr>
-    <div class="row justify-content-md-around mb-lg-6 align-items-center  ">
-        <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-left" data-aos-delay="100">
-            <img src="media/bussiness-man.jpg" class="img-fluid rounded-blob shadow-lg" alt="">
-        </div>
-        <div class="col-md-6 order-md-last mb-8 mt-8" data-aos="fade-right" data-aos-delay="150">
-            <div class="d-flex justify-content-center mb-4">
-                <h4 class="mb-0 display-6 align-middle">
-                    Baruch Zibin
-                </h4>
-                
-            </div>
-            <div class="d-flex  justify-content-center mb-4">
-            <h6 class="mb-3  ">  Managing Partner, C.I.O
-           </h6>
-        </div>
-      
-           <div class="d-flex  justify-content-center mb-4">
-               <span>
-                   
-               e-mail:   <a href="mailto:baruch@tulip-fund.com?Subject=Regarding%20your%20fund" 
-             itemprop="email" target="_top" >
-                                 baruch@tulip-fund.com</a>
-                                </span>
-           </div>
-
-            <!--/.End heading-->
-            <ul class="list-unstyled text-dark mb-0">
-                <li class="d-flex align-items-center mt-3">
-                    <i class="bi  bi-check2 fs-6 me-2"></i>
-                    <span class="fw-semibold "> 2010-2012</span>
-                </li>
-                <li >
-                    <span>Sphera Hedge Fund - Senior Portfolio Manager </span>
-                </li>
-                <li class="d-flex align-items-center mt-3">
-                    <i class="bi  bi-check2 fs-6 me-2"></i>
-                    <span class="fw-semibold "> 2007-2010</span>
-                </li>
-                <li >
-                    <span>Harel Insurance
-                        Senior Investment Manager of all the Tradable Assets (15 Bill’ $)
-                        Senior Investment Manager of the stock Division (3 Bill’ $)</span>
-                </li>
-                <li class="d-flex align-items-center mt-3">
-                    <i class="bi  bi-check2 fs-6 me-2"></i>
-                    <span class="fw-semibold ">2003-2007</span>
-                </li>
-                <li >
-                    <span>Sprint Investment House - Founder, Senior Analyst</span>
-                </li>
-                <li class="d-flex align-items-center mt-3">
-                    <i class="bi  bi-check2 fs-6 me-2"></i>
-                    <span class="fw-semibold ">1998-2003</span>
-                </li>
-                <li >
-                    <span>Harel Capital - Senior Analyst, Mutual Fund Investment Manager</span>
-                </li>
-            </ul>
-        </div>
-        <!--/.End Col-->
-    </div>
-    <hr>
-   
      <div class="row pt-9">
         <div class="col-lg-10 col-xl-9 mx-auto" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
             <div class="position-relative">
@@ -536,31 +564,157 @@
         <div class="row " data-isotope='{"layoutMode":"masonry"}' dir="rtl">
             
                 <!--Masonry-Grid-item-->
-                <div class="col-md-6 mb-4 grid-item"> 
-                <a href="https://www.themarker.com/markets/.premium-1.9442468" class="lh-sm d-block mb-1">
-                " אה של 6.8% במדד קרנות הגידור העולמי (HFR
-                " </a>
-                <span class=" small text-muted" dir="ltr">02 Sep 2021</span>
+                
+                <div class="col-md-6 mb-4 grid-item">
+                    <div itemprop="review" itemscope itemtype="https://schema.org/Review"></div>
+                     <span itemprop="reviewBody">
+                        <a href="https://www.globes.co.il/news/article.aspx?did=1001338083" class="lh-sm d-block mb-1">
+                         <h6>
+                            מי בחיובי ומי בשלילי: התשואות המפתיעות של קרנות הגידור הבולטות במחצית 2020
+                         </h6>
+                    <span class="text-dark">
+                        גם שלוש קרנות גידור שמתמחות במניות בישראל הצליחו להציג תשואה חיובית: טוליפ של מיכה מלכה וברוך ציבין 
+                    </span> </a>
+                    </span>
+                <meta itemprop="datePublished" content="2020-08-04">
+                <span itemprop="datePublished" class=" small text-muted" dir="ltr">04 July 2020</span>
+                <span itemprop="author">רון שטיין</span>
+                <span itemprop="publisher" class=" small text-muted" >
+                    גלובס
+                </span>
                 </div>
-                <div class="col-md-6 mb-4 grid-item"> 
-                    <a href="#!" class="lh-sm d-block mb-1">"Functional programming in python for
-                        beginners"
-                        </a>
-                        <span class=" small text-muted" dir="ltr">18 Sep 2021</span>
+  
+               <div class="col-md-6 mb-4 grid-item">
+                <div itemprop="review" itemscope itemtype="https://schema.org/Review"></div>
+                <span itemprop="reviewBody">
+                   <a href="https://www.globes.co.il/news/article.aspx?did=1001203186" class="lh-sm d-block mb-1">
+                    <h6>
+                        קרן טוליפ הפכה לבעלת עניין בבית ההשקעות אנליסט
+                    </h6>
+               <span class="text-dark">
+                קרן הגידור רכשה ממניות בית ההשקעות בבורסה והגיעה להחזקה של קצת יותר מ-5% - בשווי נוכחי של כ-13 מיליון שקל
+               </span> </a>
+               </span>
+           <meta itemprop="datePublished" content="2021-01-12">
+           <span itemprop="datePublished" class=" small text-muted" dir="ltr">30 August 2017</span>
+           <span itemprop="author">
+            רון שטיין
+            </span>
+           <span itemprop="publisher" class=" small text-muted" >גלובס </span>
                 </div>
-                <div class="col-md-6 mb-4 grid-item"> 
-                    <a href="#!" class="lh-sm  d-block mb-1">Functional programming in python for
-                        beginners
-                        </a>
-                        <span class="d-inline-flex small text-muted" dir="ltr">18 Sep 2021</span>
+                <div class="col-md-6 mb-4 grid-item">
+                    <div itemprop="review" itemscope itemtype="https://schema.org/Review"></div>
+                    <span itemprop="reviewBody">
+                        <a href="https://www.news1.co.il/Archive/001-D-390687-00.html" class="lh-sm d-block mb-1">
+                        <h6>
+                            מדוע מצליחנים עוזבים את
+בתי ההשקעות לפעילות עצמאית
+
+                        </h6>
+                    <span class="text-dark">
+                        מנהלים רבים בשוק ההון עוזבים בשנים האחרונות מקום עבודה נוח ומסודר - ומקימים גופים וקרנות משלהם במטרה לתת ביטוי עצמאי להשקפותיהם בתחום ניהול ההשקעות
+                    </span> </a>
+                    </span>
+                <meta itemprop="datePublished" content="2022-01-10">
+                <span itemprop="datePublished" class=" small text-muted" dir="ltr">10 Januar 2022</span>
+                <span itemprop="author">
+                    שירי חביב ולדהורן 
+                </span>
+                <span itemprop="publisher" class=" small text-muted" >גלובס </span>
+                    </div>
+                <div class="col-md-6 mb-4 grid-item">
+                    <div itemprop="review" itemscope itemtype="https://schema.org/Review"></div>
+                    <span itemprop="reviewBody">
+                       <a href="https://www.funder.co.il/article/111042" class="lh-sm d-block mb-1">
+                        <h6>
+                            מור בית השקעות || יוביל סבב השקעה בהיקף של כ 4 מיליון ש"ח במרחביה אחזקות והשקעות || יהפוך לבעל עניין בחברה
+                        </h6>
+                   <span class="text-dark">
+                    לצד מור יכנסו להשקעה בחברה קרן טוליפ קפיטל ובית ההשקעות פסגות
+                   </span> </a>
+                   </span>
+               <meta itemprop="datePublished" content="2020-13-09">
+               <span itemprop="datePublished" class=" small text-muted" dir="ltr">13 August 2020</span>
+               <span itemprop="author">
+                אדם כהן
+                </span>
+               <span itemprop="publisher" class=" small text-muted" >FUNFDER </span>
+                    </div>
+                <div class="col-md-6 mb-4 grid-item">
+                    <div itemprop="review" itemscope itemtype="https://schema.org/Review"></div>
+                    <span itemprop="reviewBody">
+                        <a href="https://www.bizportal.co.il/capitalmarket/news/article/784355" class="lh-sm d-block mb-1">
+                        <h6>
+                            מור השקעות מגלה עניין בחברת מרחביה אחזקות
+                        </h6>
+                    <span class="text-dark">
+                        לצד מור יכנסו להשקעה בחברה קרן טוליפ קפיטל ובית ההשקעות פסגות - ההנפקה בדיסקאונט אפקטיבי של 30% על שער הבסיס של המניה הבוקר
+                    </span> </a>
+                    </span>
+                <meta itemprop="datePublished" content="2020-09-20">
+                <span itemprop="datePublished" class=" small text-muted" dir="ltr">10 August 2020</span>
+                <span itemprop="author">
+                    ערן סוקול|
+                </span>
+                <span itemprop="publisher" class=" small text-muted" >Bizportal </span>
+                    </div>   
+                <div class="col-md-6 mb-4 grid-item">
+                    <div itemprop="review" itemscope itemtype="https://schema.org/Review"></div>
+                    <span itemprop="reviewBody">
+                        <a href="https://www.themarker.com/markets/.premium-1.9442468" class="lh-sm d-block mb-1">
+                        <h6>
+                            הישראלי שעשה 320% ב-4.5 שנים - כוכב חדש בענף הגידור מכה את השווקים
+                        </h6>
+                    <span class="text-dark">
+                    השונות שאיפיינה את שוק המניות בשנת הקורונה איפשרה למנהלי קרנות הגידור להתבלט — ורובם הניבו תשואות דו־ספרתיות למשקיעים
+                    </span> </a>
+                    </span>
+                <meta itemprop="datePublished" content="2021-01-12">
+                <span itemprop="datePublished" class=" small text-muted" dir="ltr">12 Januar 2021</span>
+                <span itemprop="author">
+                אסא ששון
+                </span>
+                <span itemprop="publisher" class=" small text-muted" >TheMarker </span>
+                </div>   
+                <div class="col-md-6 mb-4 grid-item">
+                    <div itemprop="review" itemscope itemtype="https://schema.org/Review"></div>
+                    <span itemprop="reviewBody">
+                        <a href="https://www.calcalist.co.il/markets/articles/0,7340,L-3899720,00.html" class="lh-sm d-block mb-1">
+                        <h6>
+                            הפשרה של וינסנט צ'נגוויז בקסניה אושרה עם כרטיס צהוב
+                        </h6>
+                    <span class="text-dark">
+                        השופט חאלד כבוב אישר את ההסדר בין בעל השליטה היהודי־בריטי בחברה הציבורית לבין מחזיק מקרב הציבור ב־1.6%. 
+                    </span> </a>
+                    </span>
+                <meta itemprop="datePublished" content="2021-03-18">
+                <span itemprop="datePublished" class=" small text-muted" dir="ltr">18 March 2021</span>
+                <span itemprop="author">
+                    עמיר קורץ
+                </span>
+                <span itemprop="publisher" class=" small text-muted" > כלכליסת </span>
+                    </div>
+          
+                <div class="col-md-6 mb-4 grid-item">
+                    <div  itemscope itemtype="https://schema.org/Review"></div>
+                    <span itemprop="reviewBody">
+                        <a itemprop="discussionUrl" href="https://www.themarker.com/markets/1.2841208" class="lh-sm d-block mb-1">
+                        <h6>
+                            השווקים בעולם רועדים? קרנות הגידור הישראליות היכו את המדדים ב-2015
+                        </h6>
+                    <span class="text-dark">
+                        וגם מיהי הקרן המצטיינת שהציגה תשואה חיובית של 16% - ומהן המניות המועדפות עליה?
+                    </span> </a>
+                    </span>
+                <meta itemprop="datePublished" content="2016-02-04">
+                <span itemprop="datePublished" class=" small text-muted" dir="ltr">04 Februar 2016</span>
+                <span itemprop="author">
+                    ערן אזרן
+                </span>
+                <span itemprop="publisher" class=" small text-muted" >TheMarker </span>
+                    </div>
                 </div>
-                <div class="col-md-6 mb-4  grid-item"> 
-                    <a href="#!" class="lh-sm  d-block mb-1">Modern and well coded bootstrap themes you should buy</a>
-                    <span class="small text-muted " dir="ltr">19 Aug 2021</span>
-                     
-                </div>
-            </div>
-            
+           
     </div>
     <!--end container-->
     <hr class="my-4 my-md-5">
@@ -571,7 +725,7 @@
  </div>
     <div class="container pt-9 pt-lg-11 pb-5">
         <div class="row">
-            <div class="col-6 col-sm-7 mb-4 mb-sm-0">
+            <div class="col-6 col-sm-7 mb-4 mb-sm-0 ">
                 <!--Subheading-->
                 <div class="mb-2" data-aos="fade-up">
                     <span class="h6">Get in Touch</span>
@@ -586,18 +740,43 @@
                 </div>
                 <!--Address-->
                 <!--style="color: #348f87"-->
-                <p class="mb-0 fw-semibold fs-6" >Ehad Haam str, 9  <br> 
-                    Tel Aviv<br>
-                    Israel</p>
+        </div>
+        <div itemscope itemtype="https://schema.org/Organization"> 
+    <div class="row">
+        
+            <div class="col-6 col-sm-7 mb-4 mb-sm-0 ">
+               
+              
+          <span itemprop="name">
+            <p class="mb-0 fw-semibold fs-6" >
+                <img itempprop="image" alt="logo" class="responsive " style="width:5%; padding-right: 1%; resize: both; opacity: 0.5;" src="media/tulip-black-transparent.png">
+            TULIP CAPITAL
+            </p>
+          </span> 
+                <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                <p class="mb-0 fw-semibold fs-6" >
+                <span itemprop="streetAddress">Ehad Haam str, 9  </span><br> 
+                <span itemprop="postalCode"></span>
+                <span itemprop="addressLocality">
+                    Tel Aviv, 6525101<br>
+                    Israel
+                </span>
+                </p>
+                </div>
             </div>
             <div class=" col-6 col-sm-5 text-sm-end">
-                <!--Phone-->
-                <a href="#!" class="fs-6 link-hover-underline">+011(1234) 56789</a><br><br>
+                <!--Phone-->tel: 
+                <a href="tel:(972)732726239" class="fs-6 link-hover-underline"><span itemprop="telephone">
+                    +972732726239</span></a><br><br>
                 <!--Email-->
-                <a href="mailto:mail@tulip-fund" class="fs-6 link-hover-underline">mail@tulip-fund</a>
-            </div>
-           
-        </div>
+                e-mail:
+                <a href="mailto:mail@tulip-fund" class="fs-6 link-hover-underline">
+                    <span itemprop="email">
+                    mail@tulip-fund</span>
+                </a>   
+            </div> 
+         </div>  
+   </div><!--organization-->
         <hr class="my-4 my-md-5">
         <div class="row text-secondary">
             <div class="col-sm-7">
@@ -625,6 +804,7 @@
             </div>
         </div>
     </div>
+    
 </footer>
 </setion>
 
