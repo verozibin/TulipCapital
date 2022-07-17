@@ -31,7 +31,11 @@
         <link rel="stylesheet" href="assets/vendor/node_modules/css/swiper-bundle.min.css" />
         <!-- Main CSS -->
         <!--link href="assets/css/theme-serif.css" rel="stylesheet"-->
-        <link href="assets/css/theme.css" rel="stylesheet">
+        <link href="assets/css/theme.min.css" rel="stylesheet">
+
+         <!--AOS Animations-->
+    <link rel="stylesheet" href="assets/vendor/node_modules/css/aos.css">
+
         <div itemscope itemtype="http://schema.org/InvestmentFund">
             <title  > Tulip CAPITAL|  Investment Hedge Fund |</title>
             <!--span  itemprop="name" >Tulip CAPITAL</span><span itemprop="type"> Investment Hedge Fund</span--> 
@@ -149,7 +153,7 @@
                       </p><!--col-lg    mb-7 mb-lg-0 -->
                         </div>
                    
-                    <div class="col-lg-4 col-md-10 me-lg-auto m-4 me-sm-10  order-lg-1 order-last ">
+                    <div class="col-lg-4 col-md-10 me-lg-auto m-4 me-sm-10  order-lg-1 order-last d-none d-sm-block d-sm-none d-md-block">
                       <div class="position-relative" data-aos="fade-left" data-aos-delay="150">
                          <!--Transparent image background bg-tint-primary bg-tint-secondary background-color:#233fe9;-->
                          
@@ -315,7 +319,7 @@
             <div class="col-lg-8 col-lg-6 text-dark text-left">
                 
                 <!--Subheading-->
-                <div class="mb-2" data-aos="fade-up">
+                <div class="mb-2" data-aos="fade-up" data-aos-delay="100">
                     <span class="h6">The Team</span>
                 </div>
 
@@ -330,17 +334,17 @@
 
                 <!--Section Heading-->
                
-                <h4 class="mb-4 display-4" data-aos="fade-up" data-aos-delay="100">Our Team </h4>
+                <h4 class="mb-4 display-4" data-aos="fade-up" data-aos-delay="100">Who we are </h4>
          
-                <p class="mb-0 ls-4 fw-semibold">
+                <p class="mb-0 ls-4 fw-semibold" data-aos="fade-up" data-aos-delay="200">
                     We are expireinced and most efficient team. 
 
                     Our Experience and Reputation earned due to many years of managing investments at the leading Israeli Investment Companies.
                 </p>
-                <p class="mb-0 ls-4 fw-semibold">
+                <p class="mb-0 ls-4 fw-semibold" data-aos="fade-up" data-aos-delay="200">
                     The <span itemprop="name"> Tulip Capital </span> Fund Managers has deep expertise across multiple disciplines including equities ,traditional bond and loan, distressed and equity derivatives.
                  </p>
-                 <p class="mb-0 ls-4 fw-semibold">
+                 <p class="mb-0 ls-4 fw-semibold" data-aos="fade-up" data-aos-delay="200">
           We are leveraging our institutional knowledge across industries, geographies, capital structures, asset classes, portfolio construction and risk management. 
          </p>
                
@@ -499,8 +503,9 @@
 <hr>
 <span itemprop="Founder" itemscope itemtype="https://schema.org/Person">
     <div class="row justify-content-md-around mb-lg-6 align-items-center  ">
-        <div class="col-md-6 mb-5 mb-md-0  " data-aos="fade-left" data-aos-delay="100">
-            <img  itemprop="photo" src="media/bussiness-man.jpg" class="img-fluid rounded-blob shadow-lg" alt="Baruch Zibin photo">
+        
+        <div class="col-md-6 mb-5 mb-md-0   " data-aos="fade-left" data-aos-delay="100">
+            <img itemprop="photo" src="media/michamalca.jpg" class="img-fluid rounded-blob shadow-lg" alt="Michael Malka photo">
         </div>
         <div class="col-md-6  mb-8 mt-8" data-aos="fade-right" data-aos-delay="150">
             <div class="d-flex justify-content-center mb-4">
@@ -613,17 +618,19 @@
         </div>
         <div itemscope itemtype="https://schema.org/Organization"> 
     <div class="row">
-            <div class="col-sm-6 mb-4 mb-sm-0 order-last">
+            <div class="col-sm-6 mb-4 mb-sm-0 order-last  align-self-center">
             <p class="mb-0 fw-semibold fs-6" >
                
                 <!--span itemprop="name">
                     <a itemprop="url" href="www.tulip-fund.com">
             TULIP CAPITAL</a></span-->
             </p>
+           <br>
+
            
-                <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                <div data-aos="flip-up" data-aos-duration="800" itemprop="address" class=" text-sm-start" itemscope itemtype="https://schema.org/PostalAddress">
                 <p class="mb-0 fw-semibold fs-6" >
-                <spsan> Address:</spsan><br>
+                <spsan > Address:</spsan><br>
                 <span itemprop="streetAddress">Ahad Ha'Am St 9  </span><br> 
                 <span itemprop="postalCode"></span>
                 <span itemprop="addressLocality">
@@ -634,7 +641,7 @@
                 </p>
                 </div>
             </div>
-            <div class=" col-sm-6 text-sm-start">
+            <div class=" col-sm-6 text-sm-start  align-self-center" data-aos="flip-down" data-aos-duration="800">
                 <!--Phone-->tel: 
                 <a href="tel:(972)732726239" class="fs-6 link-hover-underline"><span itemprop="telephone">
                     +972732726239</span></a><br>
@@ -703,7 +710,145 @@
         
         <!--Gsap animations-->
         <script src="assets/vendor/node_modules/js/gsap.min.js"></script>
-        <script src="assets/vendor/node_modules/js/swiper-bundle.min.js"></script>
+        <script>
+            let vw = window.innerWidth || document.documentElement.clientWidth,
+                maxVw = 320;
+            vw > maxVw && document.querySelectorAll(".js-hover-img-item").forEach(function (e) {
+                let t = e,
+                    r = (t.getBoundingClientRect(),
+                        e.querySelector("img")),
+                    a = r.offsetHeight,
+                    l = r.offsetWidth;
+                e.addEventListener("mouseenter",
+                        s => {
+                            e.classList.contains("is-hover") || e.classList.add("is-hover");
+                            let o = s.clientX - t.offsetLeft - l / 2,
+                                u = s.offsetY - a / 2;
+                            gsap.set(r, {
+                                x: o,
+                                y: u,
+                            })
+                        }),
+                    e.addEventListener("mousemove",
+                        e => {
+                            let s = e.clientX - t.offsetLeft - l / 2,
+                                o = e.offsetY - r.offsetTop - a * .5;
+                            gsap.to(r, {
+                                x: s,
+                                y: o,
+                                rotate: -4
+                            })
+                        }),
+                    e.addEventListener("mouseleave", () => {
+                        e.classList.contains("is-hover") && e.classList.remove("is-hover")
+                    })
+            });
+
+            //cursor
+            var element = document.querySelector('.cursor');
+
+            // Track the mouse position
+            let mouse = {
+                x: 0,
+                y: 0
+            };
+            window.addEventListener('mousemove', ev => mouse = getMousePos(ev));
+
+            // Linear interpolation
+            const lerp = (a, b, n) => (1 - n) * a + n * b;
+
+            // Gets the mouse position
+            const getMousePos = e => {
+                return {
+                    x: e.clientX,
+                    y: e.clientY
+                };
+            };
+
+            class Cursor {
+                constructor(el) {
+                    this.DOM = {
+                        el: el
+                    };
+                    this.DOM.el.style.opacity = 0;
+
+                    this.bounds = this.DOM.el.getBoundingClientRect();
+
+                    this.renderedStyles = {
+                        tx: {
+                            previous: 0,
+                            current: 0,
+                            amt: 0.2
+                        },
+                        ty: {
+                            previous: 0,
+                            current: 0,
+                            amt: 0.2
+                        },
+                        scale: {
+                            previous: 1,
+                            current: 1,
+                            amt: 0.2
+                        },
+                        opacity: {
+                            previous: 1,
+                            current: 1,
+                            amt: 0.2
+                        }
+                    };
+
+                    this.onMouseMoveEv = () => {
+                        this.renderedStyles.tx.previous = this.renderedStyles.tx.current = mouse.x - this.bounds
+                            .width / 2;
+                        this.renderedStyles.ty.previous = this.renderedStyles.ty.previous = mouse.y - this
+                            .bounds.height / 2;
+                        gsap.to(this.DOM.el, {
+                            duration: 0.9,
+                            ease: 'Power3.easeOut',
+                            opacity: 1
+                        });
+                        requestAnimationFrame(() => this.render());
+                        window.removeEventListener('mousemove', this.onMouseMoveEv);
+                    };
+                    window.addEventListener('mousemove', this.onMouseMoveEv);
+                }
+                enter() {
+                    //this.renderedStyles['scale'].current = 4;
+                    element.classList.add('cHover');
+                    //this.renderedStyles['opacity'].current = 0.5;
+                }
+                leave() {
+                    this.renderedStyles['scale'].current = 1;
+                    this.renderedStyles['opacity'].current = 1;
+                    element.classList.remove('cHover');
+                }
+                render() {
+                    this.renderedStyles['tx'].current = mouse.x - this.bounds.width / 2;
+                    this.renderedStyles['ty'].current = mouse.y - this.bounds.height / 2;
+
+                    for (const key in this.renderedStyles) {
+                        this.renderedStyles[key].previous = lerp(this.renderedStyles[key].previous, this
+                            .renderedStyles[key].current, this.renderedStyles[key].amt);
+                    }
+
+                    this.DOM.el.style.transform =
+                        `translateX(${(this.renderedStyles['tx'].previous)}px) translateY(${this.renderedStyles['ty'].previous}px) scale(${this.renderedStyles['scale'].previous})`;
+                    this.DOM.el.style.opacity = this.renderedStyles['opacity'].previous;
+
+                    requestAnimationFrame(() => this.render());
+                }
+            }
+
+
+            const cursor = new Cursor(document.querySelector('.cursor'));
+
+            [...document.querySelectorAll('a,.btn,.swiper-pagination-bullet')].forEach(link => {
+                link.addEventListener('mouseenter', () => cursor.enter());
+                link.addEventListener('mouseleave', () => cursor.leave());
+            });
+
+        </script>
+        
        
     </body>
 </html>
